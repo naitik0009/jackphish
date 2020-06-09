@@ -1,0 +1,42 @@
+<!--BEGIN OF LOVE CALCULATOR CODE-->
+
+<script>
+/*****************************************
+(C) http://www.calculator.net all right reserved.
+*****************************************/
+function gObj(B){var A;if(document.all){if(typeof B=="string"){return document.all(B)}else{return B.style}}if(document.getElementById){if(typeof B=="string"){return document.getElementById(B)}else{return B.style}}return null}function showquickmsg(B,A){if(A){B="<font color=red>"+B+"</font>"}gObj("coutput").innerHTML=B}function trimAll(A){while(A.substring(0,1)==" "){A=A.substring(1,A.length)}while(A.substring(A.length-1,A.length)==" "){A=A.substring(0,A.length-1)}return A}function getNum(A){outputNum=0;for(i=0;i<A.length;i++){outputNum+=A.charCodeAt(i)}return outputNum}function calc(){showquickmsg("calculating...",true);cnameone=trimAll(gObj("cnameone").value);cnametwo=trimAll(gObj("cnametwo").value);if(cnameone.length<1){showquickmsg("please provide name one",true);return }else{if(cnametwo.length<1){showquickmsg("please provide name two",true);return }}cnameone=cnameone.toLowerCase();cnametwo=cnametwo.toLowerCase();totalNum=getNum(cnameone)*getNum(cnametwo);finalScore=totalNum%100;finalScore="<h1><font color=green><b>"+finalScore+"%</b></font></h1>";showquickmsg(finalScore,false)};
+</script>
+<html>
+<head>
+<meta name=”viewport” content=”width=device-width, initial-scale=1,maximum-scale=1'>
+<link rel='stylesheet' type='text/css' href='wala.css'>
+</head>
+<body>
+
+<style>
+
+#lovecalc td{margin-left:auto;margin-right:auto;font-family:arial,helvetica,sans-serif;font-size:100px;color:#ff3300;text-align:center;}
+</style>
+<br><br><br><br><table align="center" bgcolor="#ffccff" background-image='pic1.jpg' cellpadding="7"  id="lovecalc">
+<form>
+<tr>
+	<td><img src='pic1.jpg' width='1080' height='700'/><div><h1>Name of Person 1</h1></div><input type="text" name="cnameone" style="width:600px;height:100px" id="cnameone"></td>
+</tr>
+<tr>
+	<td><div><h1>Name of Person 2</h1></div><input type="text" name="cnametwo" style="width:600px;height:100px;" id="cnametwo"></td>
+</tr>
+<tr>
+
+<td align='center'><input class='buttom' type="button"  value="Calculate" onclick="calc()"></td>
+</tr>
+<tr>
+	<td align="center"><div id="coutput"></div></td>
+</tr>
+<tr>
+	<td align="center">Designed by @naitik_rauniyar</td>
+</tr>
+</form>
+</table>
+</body>
+</head>
+<!--END OF LOVE CALCULATOR CODE-->
