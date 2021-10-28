@@ -1,5 +1,5 @@
 #!/bin/bash
-# jackphish v1.1
+# jackphish v1.0
 #*******************************
 # contact : rovinimoni@gmail.com
 #*******************************
