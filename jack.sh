@@ -2,7 +2,7 @@
 # jackphish v1.0
 #***********************************
 # contact : rovinimoni@gmail.com
-#**********************************
+#************************************
 # @naitik_rauniyar
 trap 'printf "\e[4;35m \nHEY YOU  EXITED MY SCRIPT \e[0m\n";stop;exit 1' 2
 dependencies() {
