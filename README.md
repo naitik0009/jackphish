@@ -1,6 +1,6 @@
 *************************
 Jackv1.0
-*************************
+**************************
 1.chmod +x jack.sh
 2. ./jack.sh
 3.Use love tests only compatible with mobile devices.
